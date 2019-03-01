@@ -1,0 +1,373 @@
+:root {
+    --name-font: 'Roboto Slab', serif;
+    --title-font: 'Oswald', sans-serif;
+    --primary-color: #415B76;
+    --side-nav-text-color: black;
+  }
+  
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-size: 10px;
+}
+
+
+
+#main{
+    position:relative;
+    }
+
+    div#first{
+    background-image: url(../images/htmlcomputer.jpeg);
+    background-size: cover;
+    opacity:0.3;
+    width:100vw;
+    height:100vh;
+    }
+
+    div#second{
+    width:100%;
+    height:100%;
+    position:absolute;
+    top: 0;
+    left:0;
+    }
+
+    .page-content {
+        color: black;
+        display: flex;
+        justify-content: stretch;
+        align-items: center;
+        flex-flow: column nowrap;
+    }
+
+    .page-title {
+        flex-basis: 75%;
+        display: flex;
+        flex-flow: column wrap;
+        justify-content: center;
+    }
+
+    .my-name {
+        
+        font-family: var(--name-font);
+        font-weight: bold;
+        font-size: 5rem;
+        letter-spacing: .4rem;
+        margin-bottom: 1rem;
+    }
+    
+    .my-info {
+        font-family: var(--title-font); 
+        font-weight: bold;
+        font-size: 2.5rem;
+        max-width: 800px;
+    }
+    .my-info span {
+        white-space: nowrap;
+    }
+
+    .page-footer {
+        flex-basis: 25%;
+        align-items: flex-end;
+    }
+
+    .page-footer {
+        display: flex;
+        padding-bottom: 5rem;
+    }
+
+    a.button {
+        text-decoration: none;
+        display: block;
+        background-color: white;
+        height: 4rem;
+        width: 10rem;
+        font-weight: bold;
+        font-size: 1.2rem;
+        line-height: 4rem;
+        text-align: center;
+        margin-right: 5rem;
+        color: var(--primary-color);
+    }
+
+    a.button:hover {
+        transform: Scale(1.1);
+    }
+    a.button:visited {
+        color: var(--primary-color);
+    }
+    .social-media {
+        
+        font-size: 1.6rem;
+        color: white;
+    }
+
+    .social-media i {
+  
+        border-radius: 50%;
+        background-color: var(--primary-color);
+        padding: .5rem;
+    }
+    .social-media i:hover {
+        background-color: white;
+        color: var(--primary-color);
+    }
+    .social-media a {
+        color: white;
+    }
+ 
+    .social-media a:visited {
+        color: white;
+    }
+
+/* Resume */
+
+#resume {
+    margin: 0 auto;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 1rem;
+    max-width: 800px;   
+}
+#resume section {
+    padding: 1rem 2rem;
+}
+
+.resume-header, .section-header {
+    padding-bottom: 1rem;
+    text-align:center;
+    font-weight: bold;
+}
+.section-header {
+    font-size: 1.2rem;
+}
+#resume ul {
+    margin-left: 2rem;
+    padding: 1rem;
+}
+.resume-header {
+    text-align: center;
+    
+}
+.contact-info {
+    display: flex;
+    align-content: space-between;
+}
+.left {
+    flex-basis: 50%;
+}
+.right {
+    flex-basis: 50%;
+    text-align: right;
+}
+
+.skills {
+    padding-top: 1rem;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-between;
+}
+.skill {
+    flex-basis: 33%;
+}
+.employer-name {
+    font-weight: bold;
+    font-weight: 1.2rem;
+}
+.position {
+    display: flex;
+    flex-flow: row wrap;
+}
+.title {
+    flex-basis: 50%;
+    font-weight: bold;
+}
+.dates {
+    flex: 50%;
+    text-align: right;
+}
+.summary, .duties {
+    flex: 100%;
+}
+.school {
+    text-align: center;
+    padding-top: 1rem;
+}
+.degree {
+    font-weight: bold;
+}
+.technical-content {
+    display: flex;
+    flex-flow: row wrap;
+}
+.technical-content .label {
+    flex-basis: 25%;
+}
+.technical-content .description {
+    flex-basis: 70%;
+}
+
+.label {
+    font-weight: bold;
+}
+
+/* SideNav */
+#main-content {
+    position: relative;
+}
+#side-nav {
+    background-color: var(--primary-color);
+    font-size: 1rem;
+    height: 100%; /* Full-height: remove this if you want "auto" height */
+    width: 15rem; /* Set the width of the sidebar */
+    position: fixed; /* Fixed Sidebar (stay in place on scroll) */
+    z-index: 1; /* Stay on top */
+    top: 0; /* Stay at the top */
+    left: 0;
+    overflow-x: hidden; /* Disable horizontal scroll */
+    padding-top: 20px;
+}
+#side-nav li {
+    padding: .5rem;
+}
+#side-nav a {
+    text-decoration: none;
+    padding: 6px 8px 6px 16px;
+    text-decoration: none;
+    font-size: 1.3rem;
+    color: var(--side-nav-text-color);
+    display: flex;
+    flex-flow: row nowrap;
+}
+#side-nav a:hover {
+    color: white;
+}
+#side-nav .nav-link i {
+    width: 2rem;
+   
+}
+#side-nav .nav-text {
+    padding-left: .5rem;
+}
+#resume-wrapper {
+    position: absolute;
+    top: 0;
+    left: 15rem;
+    padding: 2rem;
+}
+#resume {
+
+    margin: 0 auto;
+    
+}
+@media print {
+#side-nav {
+    display: none;
+
+}
+#resume-wrapper {
+    left: 0;
+    padding: 1rem;
+}
+.skill {
+    flex-basis: 50%;
+}
+ }
+
+    @media only screen and (max-width: 900px) {
+
+        .page-title h1 {
+            font-size: 4.2rem;
+        }
+        .page-title h2 {
+            font-size: 2rem;
+        }
+        #side-nav {
+            width: 4.5rem;
+        }
+        #side-nav .nav-text {
+            display: none;
+        }
+        #resume-wrapper {
+            left: 4.5rem;
+            padding: 1rem;
+        }
+        .skill {
+            flex-basis: 50%;
+        }
+      }
+      @media only screen and (max-width: 700px) {
+        .page-content {
+            align-items: flex-start;
+            padding-left: 2rem;
+        }
+
+        h2.my-info {
+            font-size: 1.5rem;
+        }
+        #side-nav {
+            display: none;
+        }
+        .page-content {
+            margin-left: 2rem;
+        }
+        .page-footer {     
+            flex-direction: column;
+            align-items: center;
+            justify-content: space-around;
+        }
+   
+        a.button {
+            
+            margin: 0;
+        }
+        .social-media {
+            margin-top: 2rem;
+        }
+        #resume-wrapper {
+            position: relative;
+            top: 0;
+            left: 0;
+        }
+        .technical-content .label {
+            flex-basis: 100%;
+        }
+        .technical-content .description {
+            flex-basis: 100%;
+        }
+      }
+      @media only screen and (max-width: 400px) {
+
+        h1.my-name {
+            font-size: 2.5rem;
+        }
+        h2.my-info {
+            font-size: 1.4rem;
+            display: flex;
+            flex-direction: column;
+        }
+        .my-info span {
+            word-wrap: break-word;
+        }
+        .skill {
+            flex-basis: 100%;
+        }
+        #resume-wrapper {
+            padding: 1rem .5rem;
+        }
+        #resume {
+            font-size: .8rem;
+        }
+        .section-header {
+            font-size: 1rem;
+        }
+
+
+      }
+    
