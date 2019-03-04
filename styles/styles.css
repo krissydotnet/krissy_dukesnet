@@ -41,6 +41,7 @@ body {
         left:0;
     }
     #portfolio {
+        display: none;
         width:100vw;
         height:100vh;
         position:absolute;
@@ -300,18 +301,21 @@ body {
     background-color: var(--primary-color);
     font-size: 1rem;
     height: 100%; /* Full-height: remove this if you want "auto" height */
-    width: 15rem; /* Set the width of the sidebar */
+    width: 17rem; /* Set the width of the sidebar */
     position: fixed; /* Fixed Sidebar (stay in place on scroll) */
     z-index: 1; /* Stay on top */
     top: 0; /* Stay at the top */
     left: 0;
     overflow-x: hidden; /* Disable horizontal scroll */
+    
+}
+#side-nav ul {
     padding-top: 20px;
 }
 #side-nav li {
     padding: .5rem;
 }
-#side-nav a {
+a.nav-link {
     text-decoration: none;
     padding: 6px 8px 6px 16px;
     text-decoration: none;
@@ -320,7 +324,7 @@ body {
     display: flex;
     flex-flow: row nowrap;
 }
-#side-nav a:hover {
+a.nav-link:hover {
     color: white;
 }
 #side-nav .nav-link i {
@@ -329,6 +333,9 @@ body {
 }
 #side-nav .nav-text {
     padding-left: .5rem;
+}
+.badge {
+    background-color: white;
 }
 #resume-wrapper {
     position: absolute;
