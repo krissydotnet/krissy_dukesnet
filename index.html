@@ -2,7 +2,7 @@
 <html lang="en">
 
 <head>
-        <link rel="shortcut icon" type="image/png" href="/favicon.png"/>
+    <link rel="shortcut icon" type="image/png" href="/favicon.png" />
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
@@ -12,9 +12,7 @@
     <link href="https://fonts.googleapis.com/css?family=Roboto:400,900" rel="stylesheet">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css"
         integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
-        <link
-        href="https://fonts.googleapis.com/css?family=Oswald:700|Roboto+Slab:400,700,900"
-        rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Oswald:700|Roboto+Slab:400,700,900" rel="stylesheet">
     <link rel="stylesheet" href="./styles/styles.css">
 
 </head>
@@ -26,7 +24,7 @@
         <div id="first">
 
         </div>
-        <div class="page-content" id="second">
+        <div class="page-content" id="home">
 
             <div class="page-title">
                 <h1 class="my-name">KRISSY</h1>
@@ -39,24 +37,97 @@
                     <span>JavaScript |</span>
                     <span>HTML |</span>
                     <span>CSS </span>
-                    </h2>
+                </h2>
             </div>
             <div class="page-footer">
- 
+                <button id="myPortfolio" class="button">SEE PORTFOLIO</button>
+
                 <a href="resume.html" class="button">SEE RESUME</a>
                 <div class="social-media">
                     <a href="https://www.linkedin.com/in/krissy-dukes/" target="_blank"><i class="fab fa-linkedin-in"
                             id="linked-in"></i></a>
                     <a href="https://twitter.com/dotnetmomma" target="_blank"><i class="fab fa-twitter"
                             id="twitter"></i></a>
+                    <a href="https://github.com/krissydotnet" target="_blank">
+                        <i class="fab fa-github-alt"></i>
+                    </a>
                     <a href="mailto:krissy@dukesnet.com" target="_blank"><i class="fas fa-at" id="email"></i></a>
                 </div>
             </div>
         </div>
+        <div class="page-content" id="portfolio">
+            <h1 class="portfolio-heading">PORTFOLIO</h1>
+            <div class="portfolio-container">
+
+                <div class="card">
+                    <a href="https://codepen.io/krissydotnet/full/JaxLrK/" class="card-link">
+                    <img src="./images/tribute_page.png" alt="Project">
+                    <div class="card-container">
+                        <h4><b>Tribute Page</b></h4>
+                        <p>HTML, CSS</p>
+                    </div>
+                </a>
+                </div>
+                <div class="card">
+                        <a href="https://codepen.io/krissydotnet/full/zJXaxd/" class="card-link">
+                    <img src="./images/survey.png" alt="Project">
+                    <div class="card-container">
+                        <h4><b>Survey Form</b></h4>
+                        <p>HTML, CSS</p>
+                    </div>
+                    </a>
+                </div>
+                <div class="card">
+                        <a href="https://codepen.io/krissydotnet/full/JmjqeX/" class="card-link">
+                    <img src="./images/technical_documentation.png" alt="Project">
+                    <div class="card-container">
+                        <h4><b>Technical Documentation</b></h4>
+                        <p>HTML, CSS</p>
+                    </div>
+                    </a>
+                </div>
+                <div class="card">
+                        <a href="https://krissydotnet.github.io/projects/bootcamp/index.html" class="card-link">
+                    <img src="./images/bootcamp.png" alt="Project">
+                    <div class="card-container">
+                        <h4><b>Frontend Masters Project</b></h4>
+                        <p>HTML, CSS, JavaScript</p>
+                    </div>
+                        </a>
+                </div> 
+                <div class="card">
+                        <a href="https://krissydotnet.github.io/ericascupcakery/" target="_blank" class="card-link">
+                    <img src="./images/ericas_cupcakes.png" alt="Project">
+                    <div class="card-container">
+                        <h4><b>Erica's Cupcakery</b></h4>
+                        <p>HTML, CSS, React.js</p>
+                    </div>
+                    </a>
+                </div>
+                <div class="card">
+                        <a href="https://krissydotnet.github.io/react-mad-libs/" target="_blank" class="card-link">
+                    <img src="./images/madlibs.png" alt="Project">
+                    <div class="card-container">
+                        <h4><b>Mad Libs Generator</b></h4>
+                        <p>HTML, SASS, React.js</p>
+                    </div>
+                        </a>
+                </div>
+
+
+
+            </div>
+            <div id="home-button">
+                    <a href="index.html" class="button">Back</a>
+            </div>
+        </div>
+
+
 
 
     </main>
-
+    <script src="./script/jquery-3.3.1.min.js"></script>
+    <script src="./script/script.js"></script>
 </body>
 
 </html>
